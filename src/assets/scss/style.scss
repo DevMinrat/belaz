@@ -16,8 +16,8 @@ html {
 body {
   background-color: $white;
 
-  font-family: Lato, sans-serif;
-  font-size: 16px;
+  @include f400;
+  font-size: 18px;
   line-height: 1;
   color: $black;
 }
@@ -33,19 +33,10 @@ a {
 
 /* Vendors */
 
-@import "vendor/slick";
-
 /* Blocks */
 
 @import "blocks/page";
 @import "blocks/container";
 @import "blocks/header";
-@import "blocks/menu";
 @import "blocks/intro";
-@import "blocks/btn-book";
-@import "blocks/section-title";
-@import "blocks/benefits";
-@import "blocks/rooms";
-@import "blocks/rub";
-@import "blocks/reviews";
 @import "blocks/footer";

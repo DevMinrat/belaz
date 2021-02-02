@@ -1,0 +1,74 @@
+.header {
+  background-color: #191919;
+
+  padding: 25px 0;
+}
+
+.header__inner {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.header-nav__list-item {
+  display: inline-block;
+}
+
+.header-nav__list-item + .header-nav__list-item {
+  margin-left: 18px;
+}
+
+.header-nav__item-link {
+  @include f700;
+  font-size: 16px;
+  color: $white;
+}
+
+.header-info {
+  display: flex;
+  align-items: center;
+}
+
+.header__work-time {
+  max-width: 90px;
+
+  @include f400;
+  font-size: 12px;
+  line-height: 2;
+  color: $white;
+
+  margin-right: 38px;
+}
+
+.work-time--bold {
+  @include f700;
+}
+
+.header__tel {
+  display: flex;
+  flex-direction: column;
+
+  margin-right: 28px;
+}
+
+.header__tel-number {
+  @include f900;
+  font-size: 18px;
+  color: $white;
+}
+
+.header__tel-number + .header__tel-number {
+  margin-top: 14px;
+}
+
+.call-btn {
+  @include f700;
+  font-size: 12px;
+  text-transform: uppercase;
+  color: $white;
+
+  padding: 19px 28px;
+
+  background-color: #1669b3;
+  border: none;
+}

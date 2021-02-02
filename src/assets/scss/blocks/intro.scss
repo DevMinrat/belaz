@@ -1,0 +1,100 @@
+.intro {
+  width: 100%;
+  max-width: 1920px;
+
+  margin: 0 auto;
+
+  background: url(/assets/images/intro-bg.jpg) no-repeat top center;
+}
+
+.intro__inner {
+  width: 100%;
+  max-width: 570px;
+
+  padding: 100px;
+
+  background-color: $yellow;
+}
+
+.intro__title {
+  @include f900;
+  font-size: 40px;
+  line-height: 1.3;
+  text-transform: uppercase;
+  color: $black;
+
+  margin-bottom: 50px;
+}
+
+.intro__subtitle {
+  @include f900;
+  font-size: 25px;
+  font-weight: 400;
+  color: $black;
+  line-height: 1.2;
+
+  margin-bottom: 100px;
+}
+
+.intro__list {
+  width: 100%;
+  max-width: 316px;
+}
+
+.intro__list-item {
+  position: relative;
+
+  font-size: 18px;
+  line-height: 1.2;
+  font-weight: 700;
+
+  padding-left: 51px;
+}
+
+.intro__list-item + .intro__list-item {
+  margin-top: 48px;
+}
+
+.piggy-icon::before {
+  content: "";
+  width: 25px;
+  height: 30px;
+  position: absolute;
+  left: 0;
+  top: 50%;
+  transform: translateY(-50%);
+  background: url(/assets/images/piggy.png) no-repeat center;
+}
+
+.truck-icon::before {
+  content: "";
+  width: 30px;
+  height: 24px;
+  position: absolute;
+  left: 0;
+  top: 50%;
+  transform: translateY(-50%);
+  background: url(/assets/images/truck.png) no-repeat center;
+}
+
+.calendar-icon::before {
+  content: "";
+  width: 30px;
+  height: 30px;
+  position: absolute;
+  left: 0;
+  top: 50%;
+  transform: translateY(-50%);
+  background: url(/assets/images/calendar.png) no-repeat center;
+}
+
+.medal-icon::before {
+  content: "";
+  width: 23px;
+  height: 30px;
+  position: absolute;
+  left: 0;
+  top: 50%;
+  transform: translateY(-50%);
+  background: url(/assets/images/medal.png) no-repeat center;
+}
