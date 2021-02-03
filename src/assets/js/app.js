@@ -1,7 +1,7 @@
-//= ../../../node_modules/slick-carousel/slick/slick.js
+// example --  //= ../../../node_modules/slick-carousel/slick/slick.js
 
 $(function () {
-  //= components/slick.js
+  // example --   //= components/slick.js
 
   console.log("file 3");
 });

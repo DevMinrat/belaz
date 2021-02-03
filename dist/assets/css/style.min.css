@@ -594,3 +594,97 @@ a {
   top: 50%;
   transform: translateY(-50%);
   background: url(/assets/images/medal.png) no-repeat center; }
+
+.price {
+  background: url(/assets/images/price/price_bg.png) no-repeat top center;
+  padding-top: 100px; }
+
+.price__inner {
+  text-align: right; }
+
+.price__title {
+  max-width: 450px;
+  font-family: "ProximaNova-Black", sans-serif;
+  font-weight: 900;
+  font-size: 30px;
+  line-height: 1.2;
+  color: #000;
+  margin-bottom: 60px;
+  margin-left: auto; }
+
+.price__form-input {
+  position: relative;
+  width: 100%;
+  max-width: 370px;
+  height: 70px;
+  padding: 30px;
+  padding-right: 52px;
+  margin-bottom: 30px;
+  background-color: #f2f2f2;
+  border: none; }
+  .price__form-input::placeholder {
+    font-size: 13px;
+    color: #818181;
+    text-transform: uppercase; }
+
+.input-container {
+  position: relative; }
+
+.input-container--mail {
+  margin-right: 30px; }
+
+.input-container--mail::after {
+  content: "";
+  width: 20px;
+  height: 18px;
+  position: absolute;
+  z-index: 1;
+  right: 30px;
+  top: 50%;
+  transform: translateY(-50%);
+  background: url(/assets/images/price/mail.png) no-repeat center; }
+
+.input-container--tel::after {
+  content: "";
+  width: 20px;
+  height: 20px;
+  position: absolute;
+  z-index: 1;
+  right: 30px;
+  top: 50%;
+  transform: translateY(-50%);
+  background: url(/assets/images/price/call.png) no-repeat center; }
+
+.price__form-text {
+  display: inline-block;
+  position: relative;
+  max-width: 250px;
+  font-size: 14px;
+  line-height: 1.2;
+  font-weight: 700;
+  color: #000;
+  margin-right: 30px;
+  padding-right: 60px; }
+  .price__form-text::after {
+    content: "";
+    width: 30px;
+    height: 30px;
+    position: absolute;
+    z-index: 1;
+    right: 0;
+    top: 50%;
+    transform: translateY(-50%);
+    background: url(/assets/images/price/clock.png) no-repeat center; }
+
+.price__form-btn {
+  width: 100%;
+  max-width: 370px;
+  height: 80px;
+  padding: 30px 0;
+  font-family: "ProximaNova-Bold", sans-serif;
+  font-weight: 700;
+  font-size: 17px;
+  text-transform: uppercase;
+  color: #fff;
+  background-color: #1866af;
+  border: none; }
