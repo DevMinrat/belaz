@@ -595,9 +595,28 @@ a {
   transform: translateY(-50%);
   background: url(/assets/images/medal.png) no-repeat center; }
 
+.section__title {
+  font-family: "ProximaNova-Black", sans-serif;
+  font-weight: 900;
+  font-size: 36px;
+  color: #fff;
+  margin-bottom: 30px; }
+
+.section__title--black {
+  color: #000; }
+
+.section__title--size {
+  font-size: 30px; }
+
+.section__subtitle {
+  max-width: 390px;
+  font-size: 20px;
+  color: #fff;
+  margin: 0 auto 100px; }
+
 .price {
   background: url(/assets/images/price/price_bg.png) no-repeat top center;
-  padding-top: 100px; }
+  padding: 100px 0; }
 
 .price__inner {
   text-align: right; }
@@ -688,3 +707,26 @@ a {
   color: #fff;
   background-color: #1866af;
   border: none; }
+
+.features {
+  padding: 100px 0;
+  text-align: center;
+  background-color: #08243e; }
+
+.features__inner {
+  display: flex;
+  justify-content: space-between;
+  max-width: 1120px; }
+
+.features__item {
+  padding: 0 10px; }
+
+.features-item__img-wrapper {
+  height: 100px;
+  margin-bottom: 50px; }
+
+.features__item-text {
+  font-size: 18px;
+  line-height: 1.2;
+  color: #fff;
+  max-width: 220px; }
