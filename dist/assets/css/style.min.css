@@ -600,6 +600,7 @@ a {
   font-weight: 900;
   font-size: 36px;
   color: #fff;
+  text-align: center;
   margin-bottom: 30px; }
 
 .section__title--black {
@@ -609,10 +610,17 @@ a {
   font-size: 30px; }
 
 .section__subtitle {
+  font-family: "ProximaNova-Regular", sans-serif;
+  font-weight: 400;
   max-width: 390px;
   font-size: 20px;
+  line-height: 1.2;
   color: #fff;
+  text-align: center;
   margin: 0 auto 100px; }
+
+.section__subtitle--black {
+  color: #000; }
 
 .price {
   background: url(/assets/images/price/price_bg.png) no-repeat top center;
@@ -632,7 +640,6 @@ a {
   margin-left: auto; }
 
 .price__form-input {
-  position: relative;
   width: 100%;
   max-width: 370px;
   height: 70px;
@@ -661,7 +668,7 @@ a {
   right: 30px;
   top: 50%;
   transform: translateY(-50%);
-  background: url(/assets/images/price/mail.png) no-repeat center; }
+  background: url(/assets/images/mail.png) no-repeat center; }
 
 .input-container--tel::after {
   content: "";
@@ -672,7 +679,7 @@ a {
   right: 30px;
   top: 50%;
   transform: translateY(-50%);
-  background: url(/assets/images/price/call.png) no-repeat center; }
+  background: url(/assets/images/call.png) no-repeat center; }
 
 .price__form-text {
   display: inline-block;
@@ -730,3 +737,54 @@ a {
   line-height: 1.2;
   color: #fff;
   max-width: 220px; }
+
+.detail {
+  background: url(/assets/images/detail/detail_bg.png) no-repeat center #0b3554;
+  background-size: cover;
+  padding: 100px 0; }
+
+.section__subtitle--detail {
+  max-width: 630px;
+  margin-bottom: 30px; }
+
+.detail__inner {
+  text-align: center; }
+
+.detail__form {
+  margin-bottom: 60px; }
+  .detail__form .input-container--tel::after {
+    right: 60px; }
+
+.detail__form-input {
+  margin-right: 27px; }
+
+.detail__form-btn {
+  width: 100%;
+  max-width: 360px;
+  height: 70px;
+  padding: 28px 0;
+  vertical-align: top;
+  font-family: "ProximaNova-Bold", sans-serif;
+  font-weight: 700;
+  font-size: 17px;
+  text-transform: uppercase;
+  color: #fff;
+  background-color: #f7b516;
+  border: none; }
+
+.detail__text {
+  font-size: 14px;
+  line-height: 1.2;
+  color: #fff; }
+
+.detail__text--recall {
+  margin-bottom: 30px; }
+
+.detail__text--nubmer {
+  margin-bottom: 16px; }
+
+.detail__tel-number {
+  font-family: "ProximaNova-Black", sans-serif;
+  font-weight: 900;
+  font-size: 30px;
+  color: #fff; }

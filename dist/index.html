@@ -94,10 +94,10 @@
                             на электронную почту!</h3>
                         <form class="price__form" action="get">
                             <span class="input-container input-container--mail">
-                                <input class="price__form-input" type="email" placeholder="Введите ваш e-mail">
+                                <input class="price__form-input" type="email" placeholder="Введите ваш e-mail" required>
                             </span>
                             <span class="input-container input-container--tel">
-                                <input class="price__form-input form-input--tel" type="tel" placeholder="Введите ваш телефон">
+                                <input class="price__form-input" type="tel" placeholder="Введите ваш телефон">
                             </span>
                             <div class="form-btn--wrapper">
                                 <p class="price__form-text">Прайс придет к Вам на почту
@@ -144,6 +144,29 @@
                             </div>
                             <p class="features__item-text">Доставим в любое место!</p>
                         </div>
+                    </div>
+                </div>
+            </section>
+            
+            <section class="detail">
+                <div class="container">
+                    <h2 class="section__title section__title--size">Ищете конкретную деталь?</h2>
+                    <p class="section__subtitle section__subtitle--detail">Если у Вас есть артикул - введите его в поле ниже и
+                        получите цену
+                        ПРЯМО СЕЙЧАС!</p>
+                    <div class="detail__inner">
+                        <form class="detail__form" action="get">
+                            <input class="price__form-input detail__form-input" type="text" placeholder="Введите артикул детали"
+                                required>
+                            <span class="input-container input-container--tel">
+                                <input class="price__form-input detail__form-input" type="tel" placeholder="Введите ваш телефон"
+                                    required>
+                            </span>
+                            <button class="detail__form-btn" type="submit">Получить прайс</button>
+                        </form>
+                        <p class="detail__text detail__text--recall">Мы перезвоним вам в течение 3 минут и назовем цену детали!</p>
+                        <p class="detail__text detail__text--nubmer">Или Вы можете перезвонить нам сами:</p>
+                        <a class="detail__tel-number" href="tel:+78182474725">+7 (818) 247-47-25</a>
                     </div>
                 </div>
             </section>
