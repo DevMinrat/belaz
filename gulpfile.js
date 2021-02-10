@@ -82,17 +82,6 @@ function html(cb) {
 function css(cb) {
   return src(path.src.css, { base: srcPath + "assets/scss/" })
     .pipe(
-      plumber({
-        errorHandler: function (err) {
-          notify.onError({
-            title: "SCSS Error",
-            message: "Error: <%= error.message %>",
-          })(err);
-          this.emit("end");
-        },
-      })
-    )
-    .pipe(
       sass({
         includePaths: "./node_modules/",
       })
@@ -127,17 +116,6 @@ function css(cb) {
 
 function cssWatch(cb) {
   return src(path.src.css, { base: srcPath + "assets/scss/" })
-    .pipe(
-      plumber({
-        errorHandler: function (err) {
-          notify.onError({
-            title: "SCSS Error",
-            message: "Error: <%= error.message %>",
-          })(err);
-          this.emit("end");
-        },
-      })
-    )
     .pipe(
       sass({
         includePaths: "./node_modules/",

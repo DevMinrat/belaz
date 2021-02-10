@@ -1,0 +1,29 @@
+.features {
+  padding: $section-padding 0;
+
+  text-align: center;
+  background-color: $blue-dark;
+}
+
+.features__inner {
+  display: flex;
+  justify-content: space-between;
+  max-width: 1120px;
+}
+
+.features__item {
+  padding: 0 10px;
+}
+
+.features-item__img-wrapper {
+  height: 100px;
+  margin-bottom: 50px;
+}
+
+.features__item-text {
+  font-size: 18px;
+  line-height: 1.2;
+  color: $white;
+
+  max-width: 220px;
+}

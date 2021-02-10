@@ -1,0 +1,46 @@
+.guarantee {
+  background-color: #fff;
+
+  padding: $section-padding 0;
+}
+
+.section__header--guarantee {
+  max-width: 690px;
+}
+
+.guarantee__inner {
+  display: flex;
+  justify-content: space-between;
+}
+
+.guarantee__item {
+  text-align: center;
+}
+
+.guarantee__item-img {
+  width: 100%;
+  max-width: 230px;
+  height: 300px;
+
+  object-fit: cover;
+
+  margin-bottom: 40px;
+}
+
+.guarantee__item-text {
+  max-width: 340px;
+
+  font-size: 18px;
+  line-height: 1.2;
+  color: $black;
+
+  margin-bottom: 40px;
+}
+
+.guarantee__item-link {
+  font-size: 18px;
+  line-height: 1.2;
+  font-weight: 700;
+  color: $black;
+  text-transform: uppercase;
+}

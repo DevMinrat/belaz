@@ -1,0 +1,66 @@
+.detail {
+  background: url(/assets/images/detail/detail_bg.png) no-repeat center
+    $blue-light;
+  background-size: cover;
+
+  padding: $section-padding 0;
+}
+
+.section__subtitle--detail {
+  max-width: 630px;
+
+  margin-bottom: 60px;
+}
+
+.detail__inner {
+  text-align: center;
+}
+
+.detail__form {
+  margin-bottom: 30px;
+
+  & .input-container--tel::after {
+    right: 60px;
+  }
+}
+
+.detail__form-input {
+  margin-right: 27px;
+}
+
+.detail__form-btn {
+  width: 100%;
+  max-width: 360px;
+  height: 70px;
+
+  padding: 28px 0;
+  vertical-align: top;
+
+  @include f700;
+  font-size: 17px;
+  text-transform: uppercase;
+  color: $white;
+
+  background-color: $yellow;
+  border: none;
+}
+
+.detail__text {
+  font-size: 14px;
+  line-height: 1.2;
+  color: $white;
+}
+
+.detail__text--recall {
+  margin-bottom: 30px;
+}
+
+.detail__text--nubmer {
+  margin-bottom: 16px;
+}
+
+.detail__tel-number {
+  @include f900;
+  font-size: 30px;
+  color: $white;
+}
