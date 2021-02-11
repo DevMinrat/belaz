@@ -1,4 +1,5 @@
-// example --  //= ../../../node_modules/slick-carousel/slick/slick.js
+//= ../../../node_modules/swiper/swiper-bundle.js
+//= ../../../node_modules/@fancyapps/fancybox/dist/jquery.fancybox.js
 
 $(function () {
   // Accordeon questions section
@@ -6,7 +7,7 @@ $(function () {
   $(".questions__accordeon-content").hide();
 
   $(".questions__accordeon-title").click(function () {
-    // $(this).parent().toggleClass("active").siblings().removeClass("active");
+    $(this).parent().toggleClass("active").siblings().removeClass("active");
     $(".questions__accordeon-content").slideUp();
 
     if (!$(this).next().is(":visible")) {
@@ -19,4 +20,6 @@ $(function () {
     $(".show-more").toggleClass("show-more--hidden");
     $(".show-less").toggleClass("show-less--hidden");
   });
+
+  //= components/swiper.js
 });
