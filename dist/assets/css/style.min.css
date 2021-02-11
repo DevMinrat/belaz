@@ -938,3 +938,26 @@ a {
 
 .show-more--hidden {
   display: none; }
+
+.stages {
+  padding: 100px 0; }
+
+.container--stages {
+  max-width: 1030px; }
+
+.stages__inner {
+  display: flex;
+  justify-content: space-between; }
+
+.stages__item {
+  text-align: center; }
+
+.stages__item-img {
+  margin-bottom: 50px; }
+
+.stages__item-text {
+  width: 100%;
+  max-width: 230px;
+  font-size: 18px;
+  line-height: 1.2;
+  color: #000; }

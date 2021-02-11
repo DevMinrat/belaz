@@ -1032,3 +1032,122 @@ a:hover {
     background-color: #0b3554;
     padding: 100px 0;
 }
+
+.questions__inner {
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-pack: justify;
+    justify-content: space-between;
+}
+
+.questions__accordeon {
+    width: 100%;
+    max-width: 450px;
+    margin-left: 30px;
+    list-style: decimal;
+}
+
+.questions__accordeon-item {
+    padding-left: 20px;
+    margin-bottom: 55px;
+    opacity: 1;
+    height: auto;
+    transition: all 0.2s linear;
+    color: #fff;
+}
+
+.questions__accordeon-item::marker {
+    color: #fff;
+}
+
+.questions__accordeon-item.active .questions__accordeon-title {
+    color: #579eff;
+}
+
+.questions__accordeon-title {
+    font-size: 16px;
+    line-height: 1.2;
+    font-weight: 700;
+    text-decoration: underline;
+    cursor: pointer;
+}
+
+.questions__accordeon-title:hover {
+    color: #579eff;
+}
+
+.questions__accordeon-content {
+    padding-top: 15px;
+    font-size: 14px;
+    line-height: 1.2;
+}
+
+.questions__accordeon-text {
+    padding-bottom: 5px;
+}
+
+.questions__image-wrapper {
+    width: 100%;
+    max-width: 570px;
+    height: auto;
+}
+
+.questions__image {
+    display: block;
+    width: 100%;
+    max-width: 570px;
+    height: auto;
+}
+
+.accordeon-item--hidden {
+    margin: 0;
+    padding: 0;
+    height: 0;
+    opacity: 0;
+}
+
+.accordeon-item--hidden .questions__accordeon-title {
+    font-size: 0;
+}
+
+.question__button-more {
+    background: none;
+    border: none;
+    outline: none;
+    font-size: 14px;
+    line-height: 1.2;
+    color: #fff;
+    text-decoration: underline;
+    margin-top: 10px;
+}
+
+.show-less--hidden {
+    display: none;
+}
+
+.show-more--hidden {
+    display: none;
+}
+
+.stages__inner {
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-pack: justify;
+    justify-content: space-between;
+}
+
+.stages__item {
+    text-align: center;
+}
+
+.stages__item-img {
+    margin-bottom: 50px;
+}
+
+.stages__item-text {
+    width: 100%;
+    max-width: 230px;
+    font-size: 18px;
+    line-height: 1.2;
+    color: #fff;
+}
