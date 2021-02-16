@@ -1,0 +1,20 @@
+.contacts {
+  text-align: center;
+
+  background: url(/assets/images/contacts_bg.png) no-repeat center;
+  background-size: cover;
+}
+
+.contacts__text {
+  font-size: 18px;
+  color: $black;
+
+  margin-bottom: 35px;
+}
+
+.contacts__number {
+  @include f900;
+  font-size: 24px;
+  font-weight: 400;
+  color: $black;
+}
