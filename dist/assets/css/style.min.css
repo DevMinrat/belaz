@@ -1331,7 +1331,7 @@ body.compensate-for-scrollbar {
   display: flex;
   align-items: center;
   justify-content: center;
-  color: var(--swiper-navigation-color, var(--swiper-theme-color)); }
+  color: #fff; }
 
 .swiper-button-prev.swiper-button-disabled,
 .swiper-button-next.swiper-button-disabled {
@@ -1342,7 +1342,8 @@ body.compensate-for-scrollbar {
 .swiper-button-prev:after,
 .swiper-button-next:after {
   font-family: swiper-icons;
-  font-size: var(--swiper-navigation-size);
+  font-size: 37px;
+  font-weight: 900;
   text-transform: none !important;
   letter-spacing: 0;
   text-transform: none;
@@ -1351,7 +1352,7 @@ body.compensate-for-scrollbar {
 
 .swiper-button-prev,
 .swiper-container-rtl .swiper-button-next {
-  left: 10px;
+  left: 30px;
   right: auto; }
 
 .swiper-button-prev:after,
@@ -1360,7 +1361,7 @@ body.compensate-for-scrollbar {
 
 .swiper-button-next,
 .swiper-container-rtl .swiper-button-prev {
-  right: 10px;
+  right: 30px;
   left: auto; }
 
 .swiper-button-next:after,
@@ -2256,3 +2257,13 @@ button.swiper-pagination-bullet {
   font-size: 18px;
   line-height: 1.2;
   color: #000; }
+
+.storage {
+  background-color: #0b3554;
+  padding: 100px 0; }
+
+.swiper-slide__img {
+  width: 100%;
+  max-width: 370px;
+  height: 270px;
+  object-fit: cover; }

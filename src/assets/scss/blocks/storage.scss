@@ -1,0 +1,16 @@
+.storage {
+  background-color: $blue-light;
+
+  padding: $section-padding 0;
+}
+
+.storage-swiper__swiper-slide {
+}
+
+.swiper-slide__img {
+  width: 100%;
+  max-width: 370px;
+  height: 270px;
+
+  object-fit: cover;
+}
