@@ -1,0 +1,54 @@
+.consult {
+  background: url(/assets/images/consult_bg.png) no-repeat center;
+  background-size: cover;
+}
+
+.section__header--consult {
+  margin-bottom: 60px;
+}
+
+.consult__inner {
+  text-align: center;
+}
+
+.consult__info {
+  margin-bottom: 60px;
+}
+
+.consult__text {
+  font-size: 14px;
+  line-height: 1.2;
+  color: $white;
+
+  margin-bottom: 15px;
+}
+
+.consult__number {
+  @include f900;
+  font-size: 30px;
+  font-weight: 400;
+  color: $white;
+}
+
+.consult__form .input-container--tel::after {
+  right: 60px;
+}
+
+.consult__form-input {
+  margin-right: 30px;
+  margin-bottom: 0;
+}
+
+.consult__form-btn {
+  width: 100%;
+  max-width: 370px;
+  height: 70px;
+
+  @include f700;
+  font-size: 17px;
+  text-transform: uppercase;
+  color: $white;
+
+  background-color: $yellow;
+  border: none;
+}

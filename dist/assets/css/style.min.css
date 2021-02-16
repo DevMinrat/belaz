@@ -1750,7 +1750,8 @@ section {
 
 .section__header {
   margin: 0 auto 100px;
-  text-align: center; }
+  text-align: center;
+  max-width: 840px; }
 
 .section__title {
   font-family: "ProximaNova-Black", sans-serif;
@@ -2062,8 +2063,6 @@ section {
   width: 100%;
   max-width: 360px;
   height: 70px;
-  padding: 28px 0;
-  vertical-align: top;
   font-family: "ProximaNova-Bold", sans-serif;
   font-weight: 700;
   font-size: 17px;
@@ -2261,9 +2260,6 @@ section {
   height: 270px;
   object-fit: cover; }
 
-.section__header--benefits {
-  max-width: 840px; }
-
 .benefits__inner {
   display: flex;
   justify-content: space-between; }
@@ -2287,3 +2283,48 @@ section {
   line-height: 1.2;
   color: #000;
   text-align: center; }
+
+.consult {
+  background: url(/assets/images/consult_bg.png) no-repeat center;
+  background-size: cover; }
+
+.section__header--consult {
+  margin-bottom: 60px; }
+
+.consult__inner {
+  text-align: center; }
+
+.consult__info {
+  margin-bottom: 60px; }
+
+.consult__text {
+  font-size: 14px;
+  line-height: 1.2;
+  color: #fff;
+  margin-bottom: 15px; }
+
+.consult__number {
+  font-family: "ProximaNova-Black", sans-serif;
+  font-weight: 900;
+  font-size: 30px;
+  font-weight: 400;
+  color: #fff; }
+
+.consult__form .input-container--tel::after {
+  right: 60px; }
+
+.consult__form-input {
+  margin-right: 30px;
+  margin-bottom: 0; }
+
+.consult__form-btn {
+  width: 100%;
+  max-width: 370px;
+  height: 70px;
+  font-family: "ProximaNova-Bold", sans-serif;
+  font-weight: 700;
+  font-size: 17px;
+  text-transform: uppercase;
+  color: #fff;
+  background-color: #f7b516;
+  border: none; }
