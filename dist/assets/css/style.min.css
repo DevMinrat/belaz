@@ -1745,6 +1745,40 @@ button.swiper-pagination-bullet {
   padding: 0 15px;
   margin: 0 auto; }
 
+section {
+  padding: 100px 0; }
+
+.section__header {
+  margin: 0 auto 100px;
+  text-align: center; }
+
+.section__title {
+  font-family: "ProximaNova-Black", sans-serif;
+  font-weight: 900;
+  font-size: 36px;
+  color: #fff;
+  text-align: center;
+  margin-bottom: 30px; }
+
+.section__title--black {
+  color: #000; }
+
+.section__title--size {
+  font-size: 30px; }
+
+.section__subtitle {
+  font-family: "ProximaNova-Regular", sans-serif;
+  font-weight: 400;
+  max-width: 390px;
+  font-size: 20px;
+  line-height: 1.2;
+  color: #fff;
+  text-align: center;
+  margin: 0 auto; }
+
+.section__subtitle--black {
+  color: #000; }
+
 .header {
   background-color: #191919;
   padding: 25px 0; }
@@ -1891,40 +1925,8 @@ button.swiper-pagination-bullet {
   transform: translateY(-50%);
   background: url(/assets/images/medal.png) no-repeat center; }
 
-.section__header {
-  margin: 0 auto 100px;
-  text-align: center; }
-
-.section__title {
-  font-family: "ProximaNova-Black", sans-serif;
-  font-weight: 900;
-  font-size: 36px;
-  color: #fff;
-  text-align: center;
-  margin-bottom: 30px; }
-
-.section__title--black {
-  color: #000; }
-
-.section__title--size {
-  font-size: 30px; }
-
-.section__subtitle {
-  font-family: "ProximaNova-Regular", sans-serif;
-  font-weight: 400;
-  max-width: 390px;
-  font-size: 20px;
-  line-height: 1.2;
-  color: #fff;
-  text-align: center;
-  margin: 0 auto; }
-
-.section__subtitle--black {
-  color: #000; }
-
 .price {
-  background: url(/assets/images/price/price_bg.png) no-repeat top center;
-  padding: 100px 0; }
+  background: url(/assets/images/price/price_bg.png) no-repeat top center; }
 
 .price__inner {
   text-align: right; }
@@ -2016,7 +2018,6 @@ button.swiper-pagination-bullet {
   border: none; }
 
 .features {
-  padding: 100px 0;
   text-align: center;
   background-color: #08243e; }
 
@@ -2040,8 +2041,7 @@ button.swiper-pagination-bullet {
 
 .detail {
   background: url(/assets/images/detail/detail_bg.png) no-repeat center #0b3554;
-  background-size: cover;
-  padding: 100px 0; }
+  background-size: cover; }
 
 .section__subtitle--detail {
   max-width: 630px;
@@ -2090,8 +2090,7 @@ button.swiper-pagination-bullet {
   color: #fff; }
 
 .guarantee {
-  background-color: #fff;
-  padding: 100px 0; }
+  background-color: #fff; }
 
 .section__header--guarantee {
   max-width: 690px; }
@@ -2125,8 +2124,7 @@ button.swiper-pagination-bullet {
   text-transform: uppercase; }
 
 .sales {
-  background-color: #08243e;
-  padding: 100px 0; }
+  background-color: #08243e; }
 
 .section__header--sales {
   max-width: 690px; }
@@ -2158,8 +2156,7 @@ button.swiper-pagination-bullet {
   color: #fff; }
 
 .questions {
-  background-color: #0b3554;
-  padding: 100px 0; }
+  background-color: #0b3554; }
 
 .questions__inner {
   display: flex;
@@ -2235,9 +2232,6 @@ button.swiper-pagination-bullet {
 .show-more--hidden {
   display: none; }
 
-.stages {
-  padding: 100px 0; }
-
 .container--stages {
   max-width: 1030px; }
 
@@ -2259,11 +2253,37 @@ button.swiper-pagination-bullet {
   color: #000; }
 
 .storage {
-  background-color: #0b3554;
-  padding: 100px 0; }
+  background-color: #0b3554; }
 
 .swiper-slide__img {
   width: 100%;
   max-width: 370px;
   height: 270px;
   object-fit: cover; }
+
+.section__header--benefits {
+  max-width: 840px; }
+
+.benefits__inner {
+  display: flex;
+  justify-content: space-between; }
+
+.benefits__item {
+  width: 100%;
+  max-width: 305px; }
+
+.benefits__item-img {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 170px;
+  height: 170px;
+  border: 5px solid #ffbc3b;
+  border-radius: 50%;
+  margin: 0 auto 40px; }
+
+.benefits__item-text {
+  font-size: 18px;
+  line-height: 1.2;
+  color: #000;
+  text-align: center; }
