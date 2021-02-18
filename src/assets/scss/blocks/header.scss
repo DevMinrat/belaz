@@ -8,14 +8,46 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
+
+  position: relative;
+}
+
+.header__nav {
+  @include breakpoint(1110px) {
+    position: absolute;
+    width: 100vw;
+    top: 65px;
+    left: 50%;
+    transform: translateX(-50%);
+    z-index: 1;
+
+    visibility: hidden;
+    opacity: 0;
+
+    transition: all 0.2s linear;
+  }
+}
+
+.header-nav__list {
+  @include breakpoint(1110px) {
+    text-align: center;
+  }
 }
 
 .header-nav__list-item {
   display: inline-block;
+
+  @include breakpoint(1110px) {
+    display: block;
+  }
 }
 
 .header-nav__list-item + .header-nav__list-item {
   margin-left: 18px;
+
+  @include breakpoint(1110px) {
+    margin: 15px 0;
+  }
 }
 
 .header-nav__item-link {
@@ -27,6 +59,21 @@
 .header-info {
   display: flex;
   align-items: center;
+
+  @include breakpoint(1110px) {
+    display: block;
+    position: absolute;
+    width: 100vw;
+    top: 164px;
+    left: 50%;
+    z-index: 1;
+    transform: translateX(-50%);
+
+    visibility: hidden;
+    opacity: 0;
+
+    transition: all 0.2s linear;
+  }
 }
 
 .header__work-time {
@@ -38,6 +85,12 @@
   color: $white;
 
   margin-right: 38px;
+
+  @include breakpoint(1110px) {
+    margin: 10px auto;
+
+    text-align: center;
+  }
 }
 
 .work-time--bold {
@@ -49,6 +102,12 @@
   flex-direction: column;
 
   margin-right: 28px;
+
+  @include breakpoint(1110px) {
+    margin: 25px auto;
+
+    text-align: center;
+  }
 }
 
 .header__tel-number {
@@ -71,4 +130,46 @@
 
   background-color: #1669b3;
   border: none;
+
+  @include breakpoint(1110px) {
+    display: block;
+
+    margin: 35px auto 25px;
+  }
+}
+
+.fixed {
+  position: fixed;
+  width: 100%;
+  z-index: 99;
+
+  padding: 10px 0;
+}
+
+// mobile styles
+
+.nav-mobile {
+  background-color: #191919;
+
+  visibility: visible;
+  opacity: 1;
+}
+
+.info-mobile {
+  background-color: #191919;
+
+  visibility: visible;
+  opacity: 1;
+}
+
+.top-arrow {
+  display: none;
+  position: fixed;
+  z-index: 99;
+  right: 25px;
+  bottom: 25px;
+}
+
+.top-arrow--visible {
+  display: block;
 }

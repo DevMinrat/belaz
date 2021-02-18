@@ -1587,7 +1587,7 @@ body.compensate-for-scrollbar {
     align-items: center;
     -ms-flex-pack: center;
     justify-content: center;
-    color: var(--swiper-navigation-color, var(--swiper-theme-color));
+    color: #fff;
 }
 
 .swiper-button-prev.swiper-button-disabled,
@@ -1600,7 +1600,8 @@ body.compensate-for-scrollbar {
 .swiper-button-prev:after,
 .swiper-button-next:after {
     font-family: swiper-icons;
-    font-size: var(--swiper-navigation-size);
+    font-size: 37px;
+    font-weight: 900;
     text-transform: none !important;
     letter-spacing: 0;
     text-transform: none;
@@ -1610,7 +1611,7 @@ body.compensate-for-scrollbar {
 
 .swiper-button-prev,
 .swiper-container-rtl .swiper-button-next {
-    left: 10px;
+    left: 30px;
     right: auto;
 }
 
@@ -1621,7 +1622,7 @@ body.compensate-for-scrollbar {
 
 .swiper-button-next,
 .swiper-container-rtl .swiper-button-prev {
-    right: 10px;
+    right: 30px;
     left: auto;
 }
 
@@ -2114,6 +2115,48 @@ button.swiper-pagination-bullet {
     margin: 0 auto;
 }
 
+section {
+    padding: 100px 0;
+}
+
+.section__header {
+    margin: 0 auto 100px;
+    text-align: center;
+    max-width: 840px;
+}
+
+.section__title {
+    font-family: "ProximaNova-Black", sans-serif;
+    font-weight: 900;
+    font-size: 36px;
+    color: #fff;
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+.section__title--black {
+    color: #000;
+}
+
+.section__title--size {
+    font-size: 30px;
+}
+
+.section__subtitle {
+    font-family: "ProximaNova-Regular", sans-serif;
+    font-weight: 400;
+    max-width: 390px;
+    font-size: 20px;
+    line-height: 1.2;
+    color: #fff;
+    text-align: center;
+    margin: 0 auto;
+}
+
+.section__subtitle--black {
+    color: #000;
+}
+
 .header {
     background-color: #191919;
     padding: 25px 0;
@@ -2294,46 +2337,8 @@ button.swiper-pagination-bullet {
     background: url(/assets/images/medal.png) no-repeat center;
 }
 
-.section__header {
-    margin: 0 auto 100px;
-    text-align: center;
-}
-
-.section__title {
-    font-family: "ProximaNova-Black", sans-serif;
-    font-weight: 900;
-    font-size: 36px;
-    color: #fff;
-    text-align: center;
-    margin-bottom: 30px;
-}
-
-.section__title--black {
-    color: #000;
-}
-
-.section__title--size {
-    font-size: 30px;
-}
-
-.section__subtitle {
-    font-family: "ProximaNova-Regular", sans-serif;
-    font-weight: 400;
-    max-width: 390px;
-    font-size: 20px;
-    line-height: 1.2;
-    color: #fff;
-    text-align: center;
-    margin: 0 auto;
-}
-
-.section__subtitle--black {
-    color: #000;
-}
-
 .price {
     background: url(/assets/images/price/price_bg.png) no-repeat top center;
-    padding: 100px 0;
 }
 
 .price__inner {
@@ -2466,7 +2471,6 @@ button.swiper-pagination-bullet {
 }
 
 .features {
-    padding: 100px 0;
     text-align: center;
     background-color: #08243e;
 }
@@ -2498,7 +2502,6 @@ button.swiper-pagination-bullet {
 .detail {
     background: url(/assets/images/detail/detail_bg.png) no-repeat center #0b3554;
     background-size: cover;
-    padding: 100px 0;
 }
 
 .section__subtitle--detail {
@@ -2526,8 +2529,6 @@ button.swiper-pagination-bullet {
     width: 100%;
     max-width: 360px;
     height: 70px;
-    padding: 28px 0;
-    vertical-align: top;
     font-family: "ProximaNova-Bold", sans-serif;
     font-weight: 700;
     font-size: 17px;
@@ -2560,7 +2561,6 @@ button.swiper-pagination-bullet {
 
 .guarantee {
     background-color: #fff;
-    padding: 100px 0;
 }
 
 .section__header--guarantee {
@@ -2605,7 +2605,6 @@ button.swiper-pagination-bullet {
 
 .sales {
     background-color: #08243e;
-    padding: 100px 0;
 }
 
 .section__header--sales {
@@ -2649,7 +2648,6 @@ button.swiper-pagination-bullet {
 
 .questions {
     background-color: #0b3554;
-    padding: 100px 0;
 }
 
 .questions__inner {
@@ -2748,10 +2746,6 @@ button.swiper-pagination-bullet {
     display: none;
 }
 
-.stages {
-    padding: 100px 0;
-}
-
 .container--stages {
     max-width: 1030px;
 }
@@ -2777,4 +2771,163 @@ button.swiper-pagination-bullet {
     font-size: 18px;
     line-height: 1.2;
     color: #000;
+}
+
+.storage {
+    background-color: #0b3554;
+}
+
+.swiper-slide__img {
+    width: 100%;
+    max-width: 370px;
+    height: 270px;
+    -o-object-fit: cover;
+    object-fit: cover;
+}
+
+.benefits__inner {
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-pack: justify;
+    justify-content: space-between;
+}
+
+.benefits__item {
+    width: 100%;
+    max-width: 305px;
+}
+
+.benefits__item-img {
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-pack: center;
+    justify-content: center;
+    -ms-flex-align: center;
+    align-items: center;
+    width: 170px;
+    height: 170px;
+    border: 5px solid #ffbc3b;
+    border-radius: 50%;
+    margin: 0 auto 40px;
+}
+
+.benefits__item-text {
+    font-size: 18px;
+    line-height: 1.2;
+    color: #000;
+    text-align: center;
+}
+
+.consult {
+    background: url(/assets/images/consult_bg.png) no-repeat center;
+    background-size: cover;
+}
+
+.section__header--consult {
+    margin-bottom: 60px;
+}
+
+.consult__inner {
+    text-align: center;
+}
+
+.consult__info {
+    margin-bottom: 60px;
+}
+
+.consult__text {
+    font-size: 14px;
+    line-height: 1.2;
+    color: #fff;
+    margin-bottom: 15px;
+}
+
+.consult__number {
+    font-family: "ProximaNova-Black", sans-serif;
+    font-weight: 900;
+    font-size: 30px;
+    font-weight: 400;
+    color: #fff;
+}
+
+.consult__form .input-container--tel::after {
+    right: 60px;
+}
+
+.consult__form-input {
+    margin-right: 30px;
+    margin-bottom: 0;
+}
+
+.consult__form-btn {
+    width: 100%;
+    max-width: 370px;
+    height: 70px;
+    font-family: "ProximaNova-Bold", sans-serif;
+    font-weight: 700;
+    font-size: 17px;
+    text-transform: uppercase;
+    color: #fff;
+    background-color: #f7b516;
+    border: none;
+}
+
+.contacts {
+    text-align: center;
+    background: url(/assets/images/contacts_bg.png) no-repeat center;
+    background-size: cover;
+}
+
+.contacts__text {
+    font-size: 18px;
+    color: #000;
+    margin-bottom: 35px;
+}
+
+.contacts__number {
+    font-family: "ProximaNova-Black", sans-serif;
+    font-weight: 900;
+    font-size: 24px;
+    font-weight: 400;
+    color: #000;
+}
+
+.footer {
+    padding: 40px 0;
+    background-color: #191919;
+}
+
+.footer__inner {
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-pack: justify;
+    justify-content: space-between;
+}
+
+.footer__copy {
+    margin: auto;
+}
+
+.footer__copy-text {
+    font-size: 12px;
+    color: #fff;
+}
+
+.footer__contacts {
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-direction: column;
+    flex-direction: column;
+}
+
+.footer__contacts-text {
+    font-size: 13px;
+    color: #fff;
+    margin-bottom: 13px;
+}
+
+.footer__contacts-number {
+    font-size: 18px;
+    font-weight: 900;
+    color: #fff;
 }
