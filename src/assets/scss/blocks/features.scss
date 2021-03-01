@@ -7,10 +7,26 @@
   display: flex;
   justify-content: space-between;
   max-width: 1120px;
+
+  @include breakpoint($md-bp) {
+    flex-wrap: wrap;
+    justify-content: center;
+  }
 }
 
 .features__item {
   padding: 0 10px;
+
+  @include breakpoint($md-bp) {
+    width: 50%;
+    max-width: 300px;
+
+    padding-bottom: 50px;
+  }
+
+  @include breakpoint($sm-bp) {
+    width: 100%;
+  }
 }
 
 .features-item__img-wrapper {
@@ -24,4 +40,8 @@
   color: $white;
 
   max-width: 220px;
+
+  @include breakpoint($md-bp) {
+    margin: 0 auto;
+  }
 }

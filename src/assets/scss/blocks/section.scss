@@ -1,5 +1,13 @@
 section {
   padding: $section-padding 0;
+
+  @include breakpoint($md-bp) {
+    padding: $section-padding-md 0;
+  }
+
+  @include breakpoint($sm-bp) {
+    padding: $section-padding-sm 0;
+  }
 }
 
 .section__header {
@@ -7,6 +15,10 @@ section {
   text-align: center;
 
   max-width: 840px;
+
+  @include breakpoint($sm-bp) {
+    margin-bottom: 60px;
+  }
 }
 
 .section__title {
@@ -16,6 +28,10 @@ section {
   text-align: center;
 
   margin-bottom: 30px;
+
+  @include breakpoint($sm-bp) {
+    font-size: 25px;
+  }
 }
 
 .section__title--black {
@@ -24,6 +40,10 @@ section {
 
 .section__title--size {
   font-size: 30px;
+
+  @include breakpoint($sm-bp) {
+    font-size: 25px;
+  }
 }
 
 .section__subtitle {
@@ -36,6 +56,10 @@ section {
   text-align: center;
 
   margin: 0 auto;
+
+  @include breakpoint($sm-bp) {
+    font-size: 18px;
+  }
 }
 
 .section__subtitle--black {

@@ -18,12 +18,34 @@
   margin-bottom: 30px;
 
   & .input-container--tel::after {
-    right: 60px;
+    right: 40px;
+  }
+}
+
+.detail-input--wrapper {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+
+  @include breakpoint(799px) {
+    justify-content: space-around;
   }
 }
 
 .detail__form-input {
-  margin-right: 27px;
+  margin: 0 15px;
+
+  @include breakpoint(799px) {
+    margin: 0;
+  }
+}
+
+.input-container--detail {
+  padding: 0;
+
+  @include breakpoint(769px) {
+    margin-top: 30px;
+  }
 }
 
 .detail__form-btn {
@@ -58,4 +80,8 @@
   @include f900;
   font-size: 30px;
   color: $white;
+
+  @include breakpoint($md-bp) {
+    font-size: 20px;
+  }
 }

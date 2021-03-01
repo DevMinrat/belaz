@@ -1,0 +1,23 @@
+.top-arrow {
+  display: none;
+  position: fixed;
+  z-index: 99;
+  right: 25px;
+  bottom: 25px;
+
+  & img {
+    @include breakpoint($sm-bp) {
+      width: 35px;
+      height: 35px;
+    }
+  }
+
+  @include breakpoint($sm-bp) {
+    right: 15px;
+    bottom: 15px;
+  }
+}
+
+.top-arrow--visible {
+  display: block;
+}

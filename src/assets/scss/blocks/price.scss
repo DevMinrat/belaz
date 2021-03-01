@@ -4,6 +4,10 @@
 
 .price__inner {
   text-align: right;
+
+  @include breakpoint($md-bp) {
+    text-align: center;
+  }
 }
 
 .price__title {
@@ -16,6 +20,30 @@
 
   margin-bottom: 60px;
   margin-left: auto;
+
+  @include breakpoint($md-bp) {
+    margin: 0 auto 60px;
+  }
+
+  @include breakpoint($sm-bp) {
+    font-size: 25px;
+  }
+}
+
+.price__form {
+  @include breakpoint($md-bp) {
+    text-align: center;
+  }
+}
+
+.input-container--wrapper {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: flex-end;
+
+  @include breakpoint(769px) {
+    justify-content: center;
+  }
 }
 
 .price__form-input {
@@ -25,7 +53,6 @@
 
   padding: 30px;
   padding-right: 52px;
-  margin-bottom: 30px;
 
   background-color: #f2f2f2;
   border: none;
@@ -39,10 +66,23 @@
 
 .input-container {
   position: relative;
+  width: 100%;
+  max-width: 370px;
+
+  margin-bottom: 30px;
+
+  @include breakpoint($md-bp) {
+    padding: 0 15px;
+  }
 }
 
 .input-container--mail {
   margin-right: 30px;
+
+  @include breakpoint($md-bp) {
+    text-align: center;
+    margin-right: 0;
+  }
 }
 
 .input-container--mail::after {
@@ -85,6 +125,11 @@
 
   margin-right: 30px;
   padding-right: 60px;
+
+  @include breakpoint(684px) {
+    display: block;
+    margin: 0 auto 25px;
+  }
 
   &::after {
     content: "";
