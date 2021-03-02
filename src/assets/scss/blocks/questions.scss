@@ -5,6 +5,10 @@
 .questions__inner {
   display: flex;
   justify-content: space-between;
+
+  @include breakpoint(1100px) {
+    justify-content: center;
+  }
 }
 
 .questions__accordeon {
@@ -12,8 +16,14 @@
   max-width: 450px;
 
   margin-left: 30px;
+  padding-right: 30px;
 
   list-style: decimal;
+}
+
+.question__accordeon-wrapper {
+  width: 100%;
+  max-width: 500px;
 }
 
 .questions__accordeon-item {
@@ -62,6 +72,10 @@
   width: 100%;
   max-width: 570px;
   height: auto;
+
+  @include breakpoint(1100px) {
+    display: none;
+  }
 }
 
 .questions__image {

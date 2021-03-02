@@ -7,10 +7,23 @@
 .footer__inner {
   display: flex;
   justify-content: space-between;
+
+  @include breakpoint($sm-bp) {
+    display: block;
+    text-align: center;
+
+    & > * {
+      margin-top: 30px;
+    }
+  }
 }
 
 .footer__copy {
   margin: auto;
+
+  @include breakpoint($sm-bp) {
+    margin-top: 30px;
+  }
 }
 
 .footer__copy-text {

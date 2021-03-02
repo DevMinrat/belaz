@@ -28,10 +28,33 @@
   font-size: 30px;
   font-weight: 400;
   color: $white;
+
+  @include breakpoint($md-bp) {
+    font-size: 25px;
+  }
 }
 
-.consult__form .input-container--tel::after {
-  right: 60px;
+.consult__form {
+  display: flex;
+  justify-content: center;
+
+  & .input-container {
+    margin-right: 30px;
+    padding: 0;
+
+    @include breakpoint($md-bp) {
+      margin-right: 0;
+    }
+  }
+
+  & .input-container--tel::after {
+    right: 60px;
+  }
+
+  @include breakpoint($md-bp) {
+    flex-wrap: wrap;
+    justify-content: space-around;
+  }
 }
 
 .consult__form-input {

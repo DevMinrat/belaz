@@ -9,10 +9,19 @@
 .guarantee__inner {
   display: flex;
   justify-content: space-between;
+
+  @include breakpoint($lg-bp) {
+    justify-content: center;
+    flex-wrap: wrap;
+  }
 }
 
 .guarantee__item {
   text-align: center;
+
+  @include breakpoint($lg-bp) {
+    margin-bottom: 30px;
+  }
 }
 
 .guarantee__item-img {

@@ -5,10 +5,20 @@
 .stages__inner {
   display: flex;
   justify-content: space-between;
+
+  @include breakpoint($md-bp) {
+    flex-wrap: wrap;
+    justify-content: center;
+  }
 }
 
 .stages__item {
   text-align: center;
+  padding: 0 10px;
+
+  @include breakpoint($md-bp) {
+    margin-bottom: 30px;
+  }
 }
 
 .stages__item-img {
