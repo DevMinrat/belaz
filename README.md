@@ -13,7 +13,7 @@ ____
 #### Демонстрация сайта 
 ____    
 
-![image]()
+![image](https://github.com/DevMinrat/belaz/blob/master/Z4pduV5Y8Q.gif)
 
 #### Ссылки    
 ____   
